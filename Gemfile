@@ -5,7 +5,7 @@ ruby '2.6.5'
 gem 'sinatra'                 #'~> 2.0.1'
 gem 'sinatra-contrib'         #'~> 2.0.1'
 gem 'sinatra-cors'
-gem 'puma'                    # Application Server
+gem 'puma'                    , '>= 4.3.8' # Application Server
 gem 'eventmachine'
 
 gem 'redis'                   # Redis
