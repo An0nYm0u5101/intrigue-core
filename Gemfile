@@ -22,8 +22,8 @@ gem 'rest-client'             # Web hooks, some tasks
 gem 'rack-protection'         # https://github.com/sinatra/rack-protection
 gem 'intrigue_api_client',    :path => "api_client"
 gem 'yajl-ruby'
-gem 'nokogiri'                # Client::Search::*Scraper
-gem 'compare-xml'
+gem 'nokogiri'                , '>= 1.11.4' # Client::Search::*Scraper
+gem 'compare-xml', '>= 0.66'
 
 # Testing
 gem 'rake'                    # Testing
@@ -56,7 +56,7 @@ gem 'net-dns'                 # dns_cache_snoop
 gem 'net-http2'               # http2 client support
 gem 'neutrino_api',           :git => 'https://github.com/NeutrinoAPI/NeutrinoAPI-Ruby.git'
 gem 'opencorporates',         :git => 'https://github.com/pentestify/opencorporates.git'
-gem 'rex'
+gem 'rex', '>= 2.0.13'
 gem 'rex-sslscan',            :git => 'https://github.com/intrigueio/rex-sslscan.git'
 gem 'ruby-nmap',              :git => 'https://github.com/pentestify/ruby-nmap.git'
 gem 'rubyzip'
@@ -81,7 +81,7 @@ gem 'versionomy'
 
 # Handlers
 gem 'couchrest'
-gem 'fog-aws'
+gem 'fog-aws', '>= 3.6.5'
 
 # production process management
 gem 'god'
