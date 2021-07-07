@@ -44,12 +44,12 @@ gem 'censys',                 :git => 'https://github.com/pentestify/censys.git'
 gem 'cloudflare',             :git => 'https://github.com/intrigueio/cloudflare.git'
 gem 'dnsbl-client',           :git => 'https://github.com/intrigueio/dnsbl-client.git'
 gem 'dnsimple'
-gem 'dnsruby'                 # dns_zone_transfer
+gem 'dnsruby'                 , '>= 1.61.3' # dns_zone_transfer
 gem 'em-resolv-replace'       # dns_brute_sub
 gem 'flareon'                 # dns resolution over http
-gem 'google-api-client'
-gem 'googleauth'
-gem 'google-cloud-storage'
+gem 'google-api-client', '>= 0.40.2'
+gem 'googleauth', '>= 0.12.0'
+gem 'google-cloud-storage', '>= 1.26.2'
 gem 'googleajax'              # search_google
 gem 'maxminddb',              :git => "https://github.com/intrigueio/maxminddb"
 gem 'net-dns'                 # dns_cache_snoop
