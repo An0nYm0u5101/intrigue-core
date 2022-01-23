@@ -10,9 +10,9 @@ gem 'eventmachine'
 
 gem 'redis'                   # Redis
 gem 'redis-namespace'         # Redis
-gem 'sidekiq'                 # Background Tasks
-gem 'sidekiq-failures'        # Background Tasks
-gem 'sidekiq-limit_fetch'     # Dynamic queueing
+gem 'sidekiq'                 , '>= 6.4.0' # Background Tasks
+gem 'sidekiq-failures'        , '>= 1.0.0' # Background Tasks
+gem 'sidekiq-limit_fetch'     , '>= 3.4.0' # Dynamic queueing
 
 gem 'thor'                    # CLI
 gem 'elasticsearch'           # Database
