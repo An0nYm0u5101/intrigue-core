@@ -28,7 +28,7 @@ gem 'compare-xml'
 # Testing
 gem 'rake'                    # Testing
 gem 'rspec'                   # Testing
-gem 'rack-test'               # Testing
+gem 'rack-test'               , '>= 2.0.0' # Testing
 
 # Database
 gem 'sequel'
