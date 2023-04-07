@@ -10,7 +10,7 @@ gem 'eventmachine'
 
 gem 'redis'                   # Redis
 gem 'redis-namespace'         # Redis
-gem 'sidekiq'                 # Background Tasks
+gem 'sidekiq'                 , '>= 7.0.8' # Background Tasks
 gem 'sidekiq-failures'        # Background Tasks
 gem 'sidekiq-limit_fetch'     # Dynamic queueing
 
