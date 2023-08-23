@@ -65,7 +65,7 @@ gem 'snmp',                   :git => 'https://github.com/intrigueio/ruby-snmp.g
 gem 'spidr',                  :git => 'https://github.com/intrigueio/spidr.git'
 gem 'towerdata_api'           # search_towerdata
 gem 'whois'                   # dns_zone_transfer, whois
-gem 'whois-parser'            # whois
+gem 'whois-parser'            , '>= 2.0.0' # whois
 gem 'whoisology',             :git => 'https://github.com/pentestify/whoisology.git'
 
 # swap these if developing on chrome_remote locally
