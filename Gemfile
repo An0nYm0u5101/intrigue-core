@@ -2,15 +2,15 @@ source 'https://rubygems.org'
 ruby '2.6.5'
 
 # core
-gem 'sinatra'                 #'~> 2.0.1'
-gem 'sinatra-contrib'         #'~> 2.0.1'
+gem 'sinatra'                 , '>= 4.0.0' #'~> 2.0.1'
+gem 'sinatra-contrib'         , '>= 4.0.0' #'~> 2.0.1'
 gem 'sinatra-cors'
 gem 'puma'                    # Application Server
 gem 'eventmachine'
 
 gem 'redis'                   # Redis
 gem 'redis-namespace'         # Redis
-gem 'sidekiq'                 # Background Tasks
+gem 'sidekiq'                 , '>= 8.0.0' # Background Tasks
 gem 'sidekiq-failures'        # Background Tasks
 gem 'sidekiq-limit_fetch'     # Dynamic queueing
 
@@ -19,7 +19,7 @@ gem 'elasticsearch'           # Database
 gem 'faraday_middleware-aws-sigv4' # AWS elasticsearch
 gem 'iconv'                   # Encoding
 gem 'rest-client'             # Web hooks, some tasks
-gem 'rack-protection'         # https://github.com/sinatra/rack-protection
+gem 'rack-protection'         , '>= 4.0.0' # https://github.com/sinatra/rack-protection
 gem 'intrigue_api_client',    :path => "api_client"
 gem 'yajl-ruby'
 gem 'nokogiri'                # Client::Search::*Scraper
