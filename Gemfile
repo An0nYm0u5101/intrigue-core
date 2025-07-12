@@ -2,24 +2,24 @@ source 'https://rubygems.org'
 ruby '2.6.5'
 
 # core
-gem 'sinatra'                 #'~> 2.0.1'
-gem 'sinatra-contrib'         #'~> 2.0.1'
+gem 'sinatra'                 , '>= 2.1.0' #'~> 2.0.1'
+gem 'sinatra-contrib'         , '>= 2.1.0' #'~> 2.0.1'
 gem 'sinatra-cors'
 gem 'puma'                    # Application Server
 gem 'eventmachine'
 
 gem 'redis'                   # Redis
 gem 'redis-namespace'         # Redis
-gem 'sidekiq'                 # Background Tasks
-gem 'sidekiq-failures'        # Background Tasks
-gem 'sidekiq-limit_fetch'     # Dynamic queueing
+gem 'sidekiq'                 , '>= 6.1.0' # Background Tasks
+gem 'sidekiq-failures'        , '>= 1.0.1' # Background Tasks
+gem 'sidekiq-limit_fetch'     , '>= 4.0.0' # Dynamic queueing
 
 gem 'thor'                    # CLI
 gem 'elasticsearch'           # Database
 gem 'faraday_middleware-aws-sigv4' # AWS elasticsearch
 gem 'iconv'                   # Encoding
 gem 'rest-client'             # Web hooks, some tasks
-gem 'rack-protection'         # https://github.com/sinatra/rack-protection
+gem 'rack-protection'         , '>= 2.1.0' # https://github.com/sinatra/rack-protection
 gem 'intrigue_api_client',    :path => "api_client"
 gem 'yajl-ruby'
 gem 'nokogiri'                # Client::Search::*Scraper
@@ -28,7 +28,7 @@ gem 'compare-xml'
 # Testing
 gem 'rake'                    # Testing
 gem 'rspec'                   # Testing
-gem 'rack-test'               # Testing
+gem 'rack-test'               , '>= 2.0.0' # Testing
 
 # Database
 gem 'sequel'
@@ -38,12 +38,12 @@ gem 'pg'
 # Tasks
 gem 'json', '>= 2.3.0'
 gem 'aws-sdk-sqs'             #,        '~> 3'
-gem 'aws-sdk-s3'              #,         '~> 3'
+gem 'aws-sdk-s3'              , '>= 1.69.0' #,         '~> 3'
 gem 'aws-sdk-route53'
 gem 'censys',                 :git => 'https://github.com/pentestify/censys.git'
 gem 'cloudflare',             :git => 'https://github.com/intrigueio/cloudflare.git'
 gem 'dnsbl-client',           :git => 'https://github.com/intrigueio/dnsbl-client.git'
-gem 'dnsimple'
+gem 'dnsimple', '>= 5.2.0'
 gem 'dnsruby'                 # dns_zone_transfer
 gem 'em-resolv-replace'       # dns_brute_sub
 gem 'flareon'                 # dns resolution over http
@@ -65,7 +65,7 @@ gem 'snmp',                   :git => 'https://github.com/intrigueio/ruby-snmp.g
 gem 'spidr',                  :git => 'https://github.com/intrigueio/spidr.git'
 gem 'towerdata_api'           # search_towerdata
 gem 'whois'                   # dns_zone_transfer, whois
-gem 'whois-parser'            # whois
+gem 'whois-parser'            , '>= 2.0.0' # whois
 gem 'whoisology',             :git => 'https://github.com/pentestify/whoisology.git'
 
 # swap these if developing on chrome_remote locally
@@ -81,7 +81,7 @@ gem 'versionomy'
 
 # Handlers
 gem 'couchrest'
-gem 'fog-aws'
+gem 'fog-aws', '>= 3.6.6'
 
 # production process management
 gem 'god'
