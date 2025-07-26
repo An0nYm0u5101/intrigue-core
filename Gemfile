@@ -14,7 +14,7 @@ gem 'sidekiq'                 # Background Tasks
 gem 'sidekiq-failures'        # Background Tasks
 gem 'sidekiq-limit_fetch'     # Dynamic queueing
 
-gem 'thor'                    # CLI
+gem 'thor'                    , '>= 1.4.0' # CLI
 gem 'elasticsearch'           # Database
 gem 'faraday_middleware-aws-sigv4' # AWS elasticsearch
 gem 'iconv'                   # Encoding
@@ -22,7 +22,7 @@ gem 'rest-client'             # Web hooks, some tasks
 gem 'rack-protection'         # https://github.com/sinatra/rack-protection
 gem 'intrigue_api_client',    :path => "api_client"
 gem 'yajl-ruby'
-gem 'nokogiri'                # Client::Search::*Scraper
+gem 'nokogiri'                , '>= 1.18.9' # Client::Search::*Scraper
 gem 'compare-xml'
 
 # Testing
@@ -81,7 +81,7 @@ gem 'versionomy'
 
 # Handlers
 gem 'couchrest'
-gem 'fog-aws'
+gem 'fog-aws', '>= 3.6.6'
 
 # production process management
 gem 'god'
