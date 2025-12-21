@@ -38,7 +38,7 @@ gem 'pg'
 # Tasks
 gem 'json', '>= 2.3.0'
 gem 'aws-sdk-sqs'             #,        '~> 3'
-gem 'aws-sdk-s3'              #,         '~> 3'
+gem 'aws-sdk-s3'              , '>= 1.208.0' #,         '~> 3'
 gem 'aws-sdk-route53'
 gem 'censys',                 :git => 'https://github.com/pentestify/censys.git'
 gem 'cloudflare',             :git => 'https://github.com/intrigueio/cloudflare.git'
