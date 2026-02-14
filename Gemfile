@@ -15,8 +15,8 @@ gem 'sidekiq-failures'        # Background Tasks
 gem 'sidekiq-limit_fetch'     # Dynamic queueing
 
 gem 'thor'                    # CLI
-gem 'elasticsearch'           # Database
-gem 'faraday_middleware-aws-sigv4' # AWS elasticsearch
+gem 'elasticsearch'           , '>= 7.17.10' # Database
+gem 'faraday_middleware-aws-sigv4' , '>= 0.4.0' # AWS elasticsearch
 gem 'iconv'                   # Encoding
 gem 'rest-client'             # Web hooks, some tasks
 gem 'rack-protection'         # https://github.com/sinatra/rack-protection
@@ -47,9 +47,9 @@ gem 'dnsimple'
 gem 'dnsruby'                 # dns_zone_transfer
 gem 'em-resolv-replace'       # dns_brute_sub
 gem 'flareon'                 # dns resolution over http
-gem 'google-api-client'
-gem 'googleauth'
-gem 'google-cloud-storage'
+gem 'google-api-client', '>= 0.53.0'
+gem 'googleauth', '>= 1.1.2'
+gem 'google-cloud-storage', '>= 1.32.0'
 gem 'googleajax'              # search_google
 gem 'maxminddb',              :git => "https://github.com/intrigueio/maxminddb"
 gem 'net-dns'                 # dns_cache_snoop
@@ -91,4 +91,4 @@ gem 'foreman'
 gem 'pry'                     # Debugging
 gem 'pry-byebug'              # Debugging
 gem 'yard'
-gem "sentry-raven"            # Error tracking (disabled by default)
+gem "sentry-raven"            , ">= 3.0.0" # Error tracking (disabled by default)
